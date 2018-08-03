@@ -1,6 +1,4 @@
-// vue.config.js
+// https://cli.vuejs.org/zh/config/
 module.exports = {
-  // 选项...
   baseUrl: "/myVue-demo/dist/"
-  //   assetsDir: "."
 };
