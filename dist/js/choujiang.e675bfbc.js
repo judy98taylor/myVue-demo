@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["choujiang"],{6790:function(t,n,a){},"896d":function(t,n,a){"use strict";a.r(n);var e=function(){var t=this,n=t.$createElement;t._self._c;return t._m(0)},s=[function(){var t=this,n=t.$createElement,a=t._self._c||n;return a("div",{staticClass:"g-index"},[a("div",{staticClass:"header"},[a("h1",[t._v("这是抽奖页面")]),a("div",{staticClass:"btn"},[t._v("抽奖按钮")])])])}],c={name:"home",components:{}},i=c,r=(a("abad"),a("2877")),o=Object(r["a"])(i,e,s,!1,null,"a76570c2",null);n["default"]=o.exports},abad:function(t,n,a){"use strict";var e=a("6790"),s=a.n(e);s.a}}]);
-//# sourceMappingURL=choujiang.0161eee7.js.map
+//# sourceMappingURL=choujiang.e675bfbc.js.map
