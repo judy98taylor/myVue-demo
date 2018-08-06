@@ -21,16 +21,21 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
-      path: "/choujiang",
-      name: "choujiang",
+      path: "/lottery",
+      name: "lottery",
       component: () =>
-        import(/* webpackChunkName: "choujiang" */ "./views/choujiang.vue")
+        import(/* webpackChunkName: "lottery" */ "./views/lottery.vue")
     },
     {
-      path: "/toupiao",
-      name: "toupiao",
+      path: "/vote",
+      name: "vote",
+      component: () => import(/* webpackChunkName: "vote" */ "./views/vote.vue")
+    },
+    {
+      path: "/questionaire",
+      name: "questionaire",
       component: () =>
-        import(/* webpackChunkName: "toupiao" */ "./views/toupiao.vue")
+        import(/* webpackChunkName: "questionaire" */ "./views/questionaire.vue")
     }
   ]
 });

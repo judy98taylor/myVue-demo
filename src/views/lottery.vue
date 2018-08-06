@@ -1,27 +1,15 @@
 <template lang="pug">
-  .p-home
+  .p-lottery
     h1 第二届现代汽车Hyundai Blue Prize
     p 第二届Hyundai Blue Prize中国青年策展人奖于2018年3月23日在北京现代汽车文化中心正式开启。Hyundai Blue Prize提名评委代表、资深策展人和独立撰稿人孙冬冬，独立策展人和艺评人鲍栋，策展人戴卓群，策展人付晓东，以及现代汽车（中国）投资有限公司李赫埈常务、现代汽车全球艺术总监李大衡部长出席发布会。
     img(src='http://t10.baidu.com/it/u=2491847634,180858475&fm=173&app=25&f=JPEG?w=600&h=400&s=5805C5184CB0589C7D0CA4C2030060BF')
     nav 
-      mt-button(@click.native="goto('vote')") 去投票
-      mt-button(@click.native="goto('questionaire')") 去答题
-      mt-button(@click.native="goto('lottery')") 去抽奖
-    // mt-navbar(v-model="selected")
-    //   mt-tab-item(id="1") 去投票
-    //   mt-tab-item(id="2") 去答题
-    //   mt-tab-item(id="3") 去抽奖
-    // mt-tab-container(v-model="selected")
-    //   mt-tab-container-item(id="1")
-    //     mt-button(@click.native="goto('vote')") 去投票
-    //   mt-tab-container-item(id="2")
-    //     mt-button(@click.native="goto('questionaire')") 去答题
-    //   mt-tab-container-item(id="3")
-    //     mt-button(@click.native="goto('lottery')") 去抽奖
+      mt-button(@click.native="draw()") 点我抽奖
+      
 
 </template>
 <style lang="stylus" scoped>
-.p-home {
+.p-lottery {
 }
 
 img {
@@ -50,14 +38,12 @@ nav {
 
 <script>
 export default {
-  name: "home",
+  name: "lottery",
   components: {},
-  data() {
-    return {
-      selected: null
-    };
-  },
   methods: {
+    draw() {
+      this.$toast("恭喜你中奖了!");
+    },
     goto(name) {
       // 对象
       this.$router.push({ path: name });
